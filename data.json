@@ -1,0 +1,94 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"title": "pelota",
+			"description": "pelota amarrilla",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "afg10",
+			"stock": 50
+		},
+		{
+			"id": 2,
+			"title": "audiculares",
+			"description": "audiculares blancos ",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "audi30",
+			"stock": 50
+		},
+		{
+			"id": 3,
+			"title": "teclado mecanico",
+			"description": "Teclado mecanico en ingles",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "tecla40",
+			"stock": 50
+		},
+		{
+			"id": 4,
+			"title": "teclado mecanico",
+			"description": "Teclado mecanico en ingles, perfecto para programar en color blanco",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "tecla40Bl",
+			"stock": 50
+		},
+		{
+			"id": 5,
+			"title": "teclado mecanico",
+			"description": "Teclado mecanico en ingles, perfecto para programar en color negro",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "tecla40NG",
+			"stock": 50
+		},
+		{
+			"id": 6,
+			"title": "mouse",
+			"description": "mouse en color negro",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "mouse50lk",
+			"stock": 50
+		},
+		{
+			"id": 7,
+			"title": "mouse",
+			"description": "mouse en color blanco",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "mouse50lko",
+			"stock": 50
+		},
+		{
+			"id": 8,
+			"title": "monitor",
+			"description": "monitor 24 pulgadas",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "moni70lo",
+			"stock": 50
+		},
+		{
+			"id": 9,
+			"title": "monitor ultra width",
+			"description": "monitor ultra width",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "ultraWidth23",
+			"stock": 50
+		},
+		{
+			"id": 10,
+			"title": "nootebook",
+			"description": "notebook 8 de ram 1t de ssd",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "ssd1t",
+			"stock": 50
+		}
+	]
+}
