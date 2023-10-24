@@ -1,4 +1,5 @@
 const fs = require('fs')
+const uuid = require('uuid').v4
 
 class ProductManager {
     constructor (path){
@@ -55,10 +56,11 @@ class ProductManager {
 
             if (codeRepeat) throw new Error('Code repeats')
 
-            let productId = data.products.length + 1
+            // let productId = data.products.length + 1
 
             const newProduct = {
-                id: productId,
+                // id: productId,
+                id: uuid(),
                 title,
                 description,
                 price,
@@ -99,9 +101,13 @@ class ProductManager {
         try {
             const content = await fs.promises.readFile(this.path, 'utf-8');
 
-            let data = JSON.parse(content);    
+            let data = JSON.parse(content);   
+            
+            let isId = data.products.find(product => product.id == id)
 
-            const productIndex = data.products.findIndex(product => product.id === id);
+            if (!isId) throw new Error('not found product')
+
+            const productIndex = data.products.findIndex(product => product.id == id);
 
             if (productIndex !== -1) {
                 data.products[productIndex].title = title;
@@ -112,13 +118,13 @@ class ProductManager {
                 data.products[productIndex].stock = stock;
   
                 await fs.promises.writeFile(this.path, JSON.stringify(data, null, '\t'), 'utf-8');
-    
-                console.log('Producto actualizado exitosamente.');
+
+                return 'Producto actualizado exitosamente.'
             } else {
                 throw new Error('Producto no encontrado.');
             }
         } catch (error) {
-            console.log({error: error.message})
+            return {error: error.message}
         }
     }
 
@@ -132,7 +138,11 @@ class ProductManager {
 
             data = JSON.parse(content)
 
-            newData = data.products.filter(produ => produ.id !== id)
+            let isId = data.products.find(produ => produ.id == id)
+
+            if (!isId) throw new Error('not found')
+
+            newData = data.products.filter(produ => produ.id != id)
 
             data.products = newData
 
@@ -140,9 +150,9 @@ class ProductManager {
 
             await fs.promises.writeFile(this.path, jsonStr, 'utf8')
 
-            console.log('success delete')
+            return 'success delete'
         } catch (error) {
-            console.log({error: message.error})
+            return {error: error.message}
         }
     }
 }

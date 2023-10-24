@@ -1,15 +1,6 @@
 {
 	"products": [
 		{
-			"id": 1,
-			"title": "pelota",
-			"description": "pelota amarrilla",
-			"price": 10,
-			"thumbnail": "https:nanananananana",
-			"code": "afg10",
-			"stock": 50
-		},
-		{
 			"id": 2,
 			"title": "audiculares",
 			"description": "audiculares blancos ",
@@ -88,6 +79,15 @@
 			"price": 10,
 			"thumbnail": "https:nanananananana",
 			"code": "ssd1t",
+			"stock": 50
+		},
+		{
+			"id": "9305e221-770b-41f7-b28e-532c7421fa97",
+			"title": "nose",
+			"description": "notebook 8 de ram 1t de ssd",
+			"price": 10,
+			"thumbnail": "https:nanananananana",
+			"code": "sdsfs",
 			"stock": 50
 		}
 	]
